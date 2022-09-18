@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output</title>
+    <style>
+        *{
+            background-color: #4361EE;
+            font-family: sans-serif;
+        }
+        p{
+            color: aliceblue;
+            padding: 2px;
+            margin: 2px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Saved Details</h1>
+    <pre>
+        <p>Book Category           <span id="lcategory"></span></p>
+        <p>Book Name                <spam id="lbname"></spam></p>
+        <p>Email                          <span id="lemail"></span></p>
+        <p>Author Name              <span id="laname"></span></p>
+        <p>Published Date           <span id="ldate"></span></p>
+        <p>Book Price                  <span id="lprice"></span></p>
+    </pre>
+    <script>
+    document.getElementById('lcategory').innerHTML=localStorage.getItem("lcategory");
+    document.getElementById('lbname').innerHTML=localStorage.getItem("lbname");
+    document.getElementById('lemail').innerHTML=localStorage.getItem("lemail");
+    document.getElementById('laname').innerHTML=localStorage.getItem("laname");
+    document.getElementById('ldate').innerHTML=localStorage.getItem("ldate");
+    document.getElementById('lprice').innerHTML=localStorage.getItem("lprice");
+
+    </script>
+</body>
+</html>

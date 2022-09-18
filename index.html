@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/styles.css">
+    
+</head>
+<body>
+    <div class="container one">
+        <h2>Library Book Details</h2>
+        <div class="navbar" >
+            <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
+            <a href="#"><i class="fa fa-fw fa-search"></i> Search</a>
+            <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+            <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
+        </div>
+    </div>
+
+    <div class="container two">
+        
+        <form action="/" id="form" method="get">
+            <h2>Add New Book</h2>  
+            <div class="inputcontrol">
+                <label for="category">Category</label>
+                <select name="category" id="category" onclick="keyPressValidateCategory()">
+                    <option value="" disabled selected>Please select category</option>
+                    <option value="IT">IT</option>
+                    <option value="Management">Management</option>
+                    <option value="Accounts">Accounts</option>
+                    <option value="Human Resources">Human Resources</option>
+                    <option value="Products">Products</option>
+                    <div class="error"></div>  
+                </select>
+                <div class="error"></div>   
+            </div>
+            <div class="inputcontrol">
+                <label for="bookname">Book Name</label>
+                    <input type="text" name="bookname" id="bname" onkeyup="keyPressValidateBName()" placeholder="Enter the Book Name">
+                <div class="error"></div>    
+            </div>
+            <div class="inputcontrol">
+                <label for="email">Author Email </label>
+                    <input type="text" name="email" id="email" onkeyup="keyPressValidateEmail()"placeholder="Enter the Author Email">
+                <div class="error"></div>
+            </div>
+        
+            <div class="inputcontrol">
+                <label for="authorname">Author Name</label>
+                    <input type="text" name="authorname" id="aname" onkeyup="keyPressValidateAName()"placeholder="Enter the Author Name">
+                <div class="error"></div>  
+            </div>
+
+            <div class="inputcontrol">
+                <label for="datepublished">Published on</label>
+                    <input type="text" name="datepublished" id="date" onkeyup="keyPressValidateDate()"placeholder="Enter the Published year">
+                <div class="error"></div>  
+            </div>
+
+            <div class="inputcontrol">
+                <label for="price">Book Price</label>
+                    <input type="text" name="price" id="price" onkeyup="keyPressValidatePrice()"placeholder="Enter the Book Price">
+                <div class="error"></div>    
+            </div>
+
+            <button type="submit">Save</button>
+            <button onclick="clearError()">Cancel</button>
+            <button onclick="showDetails()">Show</button>
+            <div class="submit-message"id="smessage"></div>
+        </form>
+    </div>
+
+    <div class="container three">
+        <p><>Copyright @2022 Gokulraj Devarajan</p>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>

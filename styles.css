@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background:linear-gradient(#F72585 #3A0CA3);
+}
+body{
+    width: 100%;
+    height: 700px;
+    margin: 0%;
+    padding: 0%;
+    background-color: #4361EE;
+}
+.container{
+    width: 70%;
+    margin: 0px auto;
+    padding: 10px 0px;
+}
+.one{
+   
+    height: 30%;
+    color:white;
+    background-color: #F72585;
+    border: 10px solid whitesmoke;
+    border-radius: 10px;
+}
+.navbar{
+    position: relative;
+    left: 10px;
+    width: 90%;
+    overflow: auto;
+    max-height: 80px;
+}
+.navbar a{
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    margin:10px 20px;
+    padding: 20px;
+    background-color: #F72585;
+}
+.navbar a:active{
+    width: 100%;
+}
+.one h2{
+    font-size: 20px ;
+    margin-left: 25px;
+}
+.one a{
+    color: white;
+}
+.one a:hover{
+    color: cornsilk;
+    background-color:#3A0CA3;
+}
+.two{
+    margin: 5px auto;
+}
+#form{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    padding: 2% 5%;
+    margin: 20px auto;
+}
+
+button{
+    font-size: 15px;
+    width: 100px;
+    margin: 10px 20px;
+    background-color: #F72585;
+    color: white;
+    padding:8px 18px;
+    border-radius: 5px;
+}
+button:hover{
+    background-color: #3A0CA3;
+}
+input,select{
+    font-size: 14px;
+    background-color: white;
+    left:50px;
+    width: 90%;
+    padding: 10px;
+    margin: 10px 12px;
+    border-radius: 5px;
+    border:none;
+}
+select:focus{
+    outline: none;
+}
+input:focus{
+    outline: none;
+    border:0.1px solid #3A0CA3;
+}
+
+
+.error{
+    visibility: visible;
+    font-size: 13.5px;
+    color: red;
+}
+.three
+{
+ 
+    height: 12%;
+    color:white;
+    background-color: #3A0CA3;
+    border: 10px solid whitesmoke;
+    border-radius: 10px;
+    text-align: center;
+}
+p{
+    font-size: 20px;
+}
+.three p{
+    font-size: 15px;
+}
+.successstyle input{
+    border: 2px solid rgb(35, 202, 35);
+}
+.errorstyle input{
+    border: 2px solid rgb(219, 69, 69);
+}
+.successcategorystyle select{
+    border: 2px solid rgb(35, 202, 35);
+}
+.errorcategorystyle select{
+    border: 2px solid rgb(219, 69, 69);
+}
+.submit-message{
+    font-size: 17px;
+    font-weight: 400;
+}
+a:active, a:focus {
+    outline: 0;
+    border: none;
+}
